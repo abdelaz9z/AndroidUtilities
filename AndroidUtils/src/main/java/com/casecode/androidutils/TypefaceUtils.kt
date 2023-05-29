@@ -12,7 +12,7 @@ import java.lang.Exception
  * @version 1.0
  * @since 2022-11-23
  */
-object TypefaceUtil {
+object TypefaceUtils {
     private const val TAG = "TypefaceUtil"
 
     /**
