@@ -256,7 +256,7 @@ object AndroidUtils {
     }
 
     /**
-     * handle key event
+     * Key listener for hiding the keyboard when the "Enter" button is tapped.
      *
      * @param view view
      * @param keyCode key code enter

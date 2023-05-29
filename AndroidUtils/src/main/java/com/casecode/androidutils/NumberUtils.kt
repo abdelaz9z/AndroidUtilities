@@ -13,9 +13,8 @@ import java.text.NumberFormat
 object NumberUtils {
 
     /**
-     * Number format dollar sign
-     *
-     * ex. Tip Amount: $18.00
+     * Format the tip amount according to the local currency and display it onscreen.
+     * Example would be "Tip Amount: $10.00".
      *
      * @param number number or amount
      * @param textView text view
