@@ -10,6 +10,7 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Build
 import android.os.Environment
+import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
@@ -23,10 +24,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import java.io.File
 import java.text.DecimalFormat
-import java.text.ParseException
-import java.text.SimpleDateFormat
 import java.util.*
-import java.util.regex.Pattern
 
 /**
  * Android utils
@@ -255,6 +253,24 @@ object AndroidUtils {
             view = View(activity)
         }
         imm.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
+    /**
+     * handle key event
+     *
+     * @param view view
+     * @param keyCode key code enter
+     * @param activity activity
+     */
+    fun handleKeyEvent(view: View, keyCode: Int, activity: Activity): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            // Hide the keyboard
+            val inputMethodManager =
+                activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+            return true
+        }
+        return false
     }
 
     /**
