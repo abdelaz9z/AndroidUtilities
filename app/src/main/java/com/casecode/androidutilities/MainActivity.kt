@@ -2,8 +2,12 @@ package com.casecode.androidutilities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.casecode.androidutilities.databinding.ActivityMainBinding
 import com.casecode.androidutils.AndroidUtils
+import com.casecode.androidutils.extenstion.toDate
+import com.casecode.androidutils.extenstion.toStringFormat
+import java.util.Date
 
 class MainActivity : AppCompatActivity() {
 

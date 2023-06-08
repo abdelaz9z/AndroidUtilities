@@ -1,4 +1,4 @@
-package com.hyperone.packingapp.utils.extenstion
+package com.casecode.androidutils.extenstion
 
 import android.graphics.Color
 import android.graphics.Typeface
